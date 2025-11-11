@@ -36,7 +36,11 @@ class View:
         self.txt_titolo = ft.Text(value="Musei di Torino", size=38, weight=ft.FontWeight.BOLD)
 
         # --- Sezione 2: Filtraggio ---
-        # TODO
+        self.dd_museo = ft.Dropdown(
+            label="Museo",
+            width=300,
+            on_change = self.controller.on_museo_change()
+        )
 
         # Sezione 3: Artefatti
         # TODO
